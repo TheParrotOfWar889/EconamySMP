@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "economysmp",
+  "version": "${version}",
+  "name": "EconomySMP",
+  "description": "A comprehensive economy mod for Minecraft featuring shops, crates, enchantments, and more.",
+  "authors": [
+    "TheParrotOfWar889"
+  ],
+  "contact": {
+    "homepage": "https://github.com/TheParrotOfWar889/EconamySMP",
+    "sources": "https://github.com/TheParrotOfWar889/EconamySMP"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.economysmp.EconomySMPMod"
+    ],
+    "server": [
+      "com.economysmp.EconomySMPMod"
+    ]
+  },
+  "mixins": [
+    "economysmp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "26.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
