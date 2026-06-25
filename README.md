@@ -5,9 +5,9 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - 💰 Economy system (coins, balance, transactions)
 - 🛒 Shop GUI with buy/sell functionality
 - 📦 Marketplace system with orders
-- 🏪 Auction House with bidding system
-- 💎 Shards (premium currency) - Coming Soon
-- 🎁 Animated crates - Coming Soon
+- 🏛️ Auction House with bidding system
+- 💎 Shards (premium currency)
+- 🎁 Animated crates with 5 tiers
 - ✨ 40+ custom enchantments - Coming Soon
 - 📈 Skills and leveling system - Coming Soon
 - 🏦 Bank system - Coming Soon
@@ -16,16 +16,16 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - 📊 Leaderboards - Coming Soon
 - 🎯 Daily rewards - Coming Soon
 
-## Phase 3.5 - Auction House System ✅
+## Phase 4 - Shards & Crates System ✅
 
-- ✅ Auction creation and listing
-- ✅ Bidding system
-- ✅ Real-time bid tracking
-- ✅ Auto-completion on expiration
-- ✅ 7-day auction duration
-- ✅ Bid history
-- ✅ Seller and bidder management
-- ✅ Automatic refunds for outbid players
+- ✅ Shard currency system
+- ✅ 5 Crate tiers (Common, Rare, Epic, Legendary, Mythic)
+- ✅ Random reward system
+- ✅ Animated crate opening
+- ✅ Reward rarity system
+- ✅ Crate cooldown system
+- ✅ Shard shop display
+- ✅ Rich reward descriptions
 
 ## How to Build
 
@@ -62,37 +62,54 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - `/ah myauctions` - View your listed auctions
 - `/ah mybids` - View your active bids
 
-## Auction House Features
+### Crates & Shards
+- `/crate open <type>` - Open a crate (Common, Rare, Epic, Legendary, Mythic)
+- `/crate info <type>` - Get info about a crate type
+- `/shardshop` - View shard shop and crate costs
 
-- **7-Day Auctions**: Items listed for 7 days
-- **Bidding System**: Players can bid higher to win
-- **Auto Refunds**: Outbid players automatically get refunded
-- **Auction History**: Track all your auctions and bids
-- **Real-Time Tracking**: See time remaining on auctions
-- **Persistent Storage**: All auctions saved to disk
+## Crate System
 
-## Example Auction House Usage
+### Crate Tiers & Costs
+- **Common Crate**: 10 Shards
+- **Rare Crate**: 25 Shards
+- **Epic Crate**: 50 Shards
+- **Legendary Crate**: 100 Shards
+- **Mythic Crate**: 250 Shards
+
+### Possible Rewards by Tier
+
+**Common**: Diamonds, Gold Ingots, Emeralds, Iron, 100 Coins
+**Rare**: More Diamonds, More Gold, Pickaxes, 500 Coins
+**Epic**: Large quantities of gems, Iron Pickaxe, 2000 Coins
+**Legendary**: Massive gem hoards, Diamond Pickaxe, 5000 Coins, 100 Shards
+**Mythic**: Ultimate treasures, 100 Diamonds, 200 Gold, 128 Emeralds, 10000 Coins, 500 Shards
+
+## Example Crate Usage
 
 ```
-/ah sell diamond 1 1000
-  → List 1 diamond starting bid 1000 coins
+/shardshop
+  → See crate costs and your shard balance
 
-/ah view
-  → See all active auctions
+/crate info legendary
+  → Learn about Legendary crates
 
-/ah bid auction_123456 1500
-  → Bid 1500 coins on auction
+/crate open common
+  → Open a common crate (costs 10 shards)
+  → Get random reward!
 
-/ah myauctions
-  → View your listed auctions
-
-/ah mybids
-  → View auctions you're bidding on
-
-/ah cancel auction_123456
-  → Cancel your auction
+/crate open mythic
+  → Open ultimate crate (costs 250 shards)
+  → Chance at 500 shards or 10000 coins!
 ```
+
+## Complete Feature Set
+
+✅ Economy System (Phase 1)
+✅ Shop GUI (Phase 2)
+✅ Marketplace (Phase 3)
+✅ Auction House (Phase 3.5)
+✅ Shards & Crates (Phase 4)
 
 ## Next Phase
 
-Shards & Crates system with animated crate openings and rewards.
+Custom Enchantments & Skills system.

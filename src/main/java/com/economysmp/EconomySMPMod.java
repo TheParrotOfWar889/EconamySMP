@@ -5,6 +5,7 @@ import com.economysmp.command.EconomyCommands;
 import com.economysmp.command.ShopCommands;
 import com.economysmp.command.MarketplaceCommands;
 import com.economysmp.command.AuctionHouseCommands;
+import com.economysmp.command.CrateCommands;
 import com.economysmp.data.PlayerDataManager;
 import com.economysmp.marketplace.MarketplaceManager;
 import com.economysmp.auctionhouse.AuctionHouseManager;
@@ -31,6 +32,7 @@ public class EconomySMPMod implements ModInitializer {
         ShopCommands.register();
         MarketplaceCommands.register();
         AuctionHouseCommands.register();
+        CrateCommands.register();
         
         LOGGER.info("EconomySMP initialized successfully!");
     }
