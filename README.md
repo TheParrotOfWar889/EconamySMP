@@ -4,26 +4,27 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 
 - 💰 Economy system (coins, balance, transactions)
 - 🛒 Shop GUI with buy/sell functionality
-- 📦 Marketplace system (coming soon)
-- 💎 Shards (premium currency)
-- 🎁 Animated crates (coming soon)
-- ✨ 40+ custom enchantments (coming soon)
-- 📈 Skills and leveling system (coming soon)
-- 🏦 Bank system (coming soon)
-- 🏡 Homes and warps (coming soon)
-- ⚡ Teleport commands (coming soon)
-- 📊 Leaderboards (coming soon)
-- 🎯 Daily rewards (coming soon)
+- 📦 Marketplace system with orders
+- 💎 Shards (premium currency) - Coming Soon
+- 🎁 Animated crates - Coming Soon
+- ✨ 40+ custom enchantments - Coming Soon
+- 📈 Skills and leveling system - Coming Soon
+- 🏦 Bank system - Coming Soon
+- 🏡 Homes and warps - Coming Soon
+- ⚡ Teleport commands - Coming Soon
+- 📊 Leaderboards - Coming Soon
+- 🎯 Daily rewards - Coming Soon
 
-## Phase 2 - Shop GUI System ✅
+## Phase 3 - Marketplace System ✅
 
-- ✅ Shop item database (40+ items)
-- ✅ Shop GUI screen with categories
-- ✅ Sell screen GUI
-- ✅ Item search and filtering
-- ✅ Buy price and sell price display
-- ✅ Category navigation
-- ✅ Scrolling through items
+- ✅ Order creation (buy/sell)
+- ✅ Order management
+- ✅ Order browsing
+- ✅ Order transactions
+- ✅ Order expiration (48 hours)
+- ✅ Player order history
+- ✅ Coin transfers between players
+- ✅ Order cancellation
 
 ## How to Build
 
@@ -34,20 +35,52 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 
 ## Commands
 
+### Economy
 - `/balance` - Check your coins and shards
 - `/money` - Alternative to `/balance`
 - `/pay <player> <amount>` - Send coins to another player
 - `/addmoney <player> <amount>` - Admin command to add coins
+
+### Shop
 - `/shop` - Open the shop GUI
 
-## Shop Features
+### Marketplace
+- `/order sell <item> <quantity> <price>` - Create a sell order
+- `/order buy <item> <quantity> <price>` - Create a buy order
+- `/browse sell` - View all active sell orders
+- `/browse buy` - View all active buy orders
+- `/buy <orderId> <quantity>` - Purchase items from an order
+- `/cancelorder <orderId>` - Cancel your own order
+- `/myorders` - View your active orders
 
-- **6 Categories**: Blocks, Tools, Armor, Food, Materials, Decorations
-- **40+ Sellable Items** with buy and sell prices
-- **Search Functionality** to find items quickly
-- **Scrollable Interface** for browsing
-- **Color-Coded UI** for easy navigation
+## Marketplace Features
+
+- **Sell Orders**: Put items up for sale that other players can buy
+- **Buy Orders**: Post what you want to buy and at what price
+- **Auto Expiration**: Orders expire after 48 hours
+- **Transaction History**: Track all your trades
+- **Order Status**: View if orders are active, completed, or expired
+- **Player Trading**: Direct player-to-player economy
+
+## Example Marketplace Usage
+
+```
+/order sell dirt 64 10
+  → Creates a sell order: 64 dirt at 10 coins each
+
+/browse sell
+  → Shows all active sell orders
+
+/buy order_123456 32
+  → Buy 32 dirt from order_123456 for 320 coins
+
+/myorders
+  → View all your active orders
+
+/cancelorder order_123456
+  → Cancel your order
+```
 
 ## Next Phase
 
-Marketplace system with order placement and fulfillment.
+Shards & Crates system with animated crate openings and rewards.
