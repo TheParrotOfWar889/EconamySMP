@@ -19,6 +19,9 @@
     ],
     "server": [
       "com.economysmp.EconomySMPMod"
+    ],
+    "client": [
+      "com.economysmp.client.EconomySMPClient"
     ]
   },
   "mixins": [

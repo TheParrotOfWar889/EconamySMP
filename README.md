@@ -3,26 +3,27 @@
 A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 
 - 💰 Economy system (coins, balance, transactions)
-- 🛒 Shop GUI
-- 📦 Marketplace system
+- 🛒 Shop GUI with buy/sell functionality
+- 📦 Marketplace system (coming soon)
 - 💎 Shards (premium currency)
-- 🎁 Animated crates
-- ✨ 40+ custom enchantments
-- 📈 Skills and leveling system
-- 🏦 Bank system
-- 🏡 Homes and warps
-- ⚡ Teleport commands
-- 📊 Leaderboards
-- 🎯 Daily rewards
+- 🎁 Animated crates (coming soon)
+- ✨ 40+ custom enchantments (coming soon)
+- 📈 Skills and leveling system (coming soon)
+- 🏦 Bank system (coming soon)
+- 🏡 Homes and warps (coming soon)
+- ⚡ Teleport commands (coming soon)
+- 📊 Leaderboards (coming soon)
+- 🎯 Daily rewards (coming soon)
 
-## Phase 1 - Complete ✅
+## Phase 2 - Shop GUI System ✅
 
-- ✅ Fabric 26.1 project setup
-- ✅ Player data management (JSON-based)
-- ✅ `/balance` command
-- ✅ `/pay` command
-- ✅ `/money` command
-- ✅ `/addmoney` command (admin)
+- ✅ Shop item database (40+ items)
+- ✅ Shop GUI screen with categories
+- ✅ Sell screen GUI
+- ✅ Item search and filtering
+- ✅ Buy price and sell price display
+- ✅ Category navigation
+- ✅ Scrolling through items
 
 ## How to Build
 
@@ -37,7 +38,16 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - `/money` - Alternative to `/balance`
 - `/pay <player> <amount>` - Send coins to another player
 - `/addmoney <player> <amount>` - Admin command to add coins
+- `/shop` - Open the shop GUI
+
+## Shop Features
+
+- **6 Categories**: Blocks, Tools, Armor, Food, Materials, Decorations
+- **40+ Sellable Items** with buy and sell prices
+- **Search Functionality** to find items quickly
+- **Scrollable Interface** for browsing
+- **Color-Coded UI** for easy navigation
 
 ## Next Phase
 
-Shop GUI system with buy/sell functionality.
+Marketplace system with order placement and fulfillment.

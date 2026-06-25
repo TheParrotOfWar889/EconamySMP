@@ -2,6 +2,7 @@ package com.economysmp;
 
 import net.fabricmc.api.ModInitializer;
 import com.economysmp.command.EconomyCommands;
+import com.economysmp.command.ShopCommands;
 import com.economysmp.data.PlayerDataManager;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import org.slf4j.Logger;
@@ -23,6 +24,7 @@ public class EconomySMPMod implements ModInitializer {
         
         // Register commands
         EconomyCommands.register();
+        ShopCommands.register();
         
         LOGGER.info("EconomySMP initialized successfully!");
     }
