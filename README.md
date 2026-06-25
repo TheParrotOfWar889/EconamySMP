@@ -5,6 +5,7 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - 💰 Economy system (coins, balance, transactions)
 - 🛒 Shop GUI with buy/sell functionality
 - 📦 Marketplace system with orders
+- 🏪 Auction House with bidding system
 - 💎 Shards (premium currency) - Coming Soon
 - 🎁 Animated crates - Coming Soon
 - ✨ 40+ custom enchantments - Coming Soon
@@ -15,16 +16,16 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - 📊 Leaderboards - Coming Soon
 - 🎯 Daily rewards - Coming Soon
 
-## Phase 3 - Marketplace System ✅
+## Phase 3.5 - Auction House System ✅
 
-- ✅ Order creation (buy/sell)
-- ✅ Order management
-- ✅ Order browsing
-- ✅ Order transactions
-- ✅ Order expiration (48 hours)
-- ✅ Player order history
-- ✅ Coin transfers between players
-- ✅ Order cancellation
+- ✅ Auction creation and listing
+- ✅ Bidding system
+- ✅ Real-time bid tracking
+- ✅ Auto-completion on expiration
+- ✅ 7-day auction duration
+- ✅ Bid history
+- ✅ Seller and bidder management
+- ✅ Automatic refunds for outbid players
 
 ## How to Build
 
@@ -53,32 +54,43 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - `/cancelorder <orderId>` - Cancel your own order
 - `/myorders` - View your active orders
 
-## Marketplace Features
+### Auction House
+- `/ah sell <item> <quantity> <price>` - List item for auction
+- `/ah view` - View all active auctions
+- `/ah bid <auctionId> <amount>` - Place a bid on an auction
+- `/ah cancel <auctionId>` - Cancel your auction
+- `/ah myauctions` - View your listed auctions
+- `/ah mybids` - View your active bids
 
-- **Sell Orders**: Put items up for sale that other players can buy
-- **Buy Orders**: Post what you want to buy and at what price
-- **Auto Expiration**: Orders expire after 48 hours
-- **Transaction History**: Track all your trades
-- **Order Status**: View if orders are active, completed, or expired
-- **Player Trading**: Direct player-to-player economy
+## Auction House Features
 
-## Example Marketplace Usage
+- **7-Day Auctions**: Items listed for 7 days
+- **Bidding System**: Players can bid higher to win
+- **Auto Refunds**: Outbid players automatically get refunded
+- **Auction History**: Track all your auctions and bids
+- **Real-Time Tracking**: See time remaining on auctions
+- **Persistent Storage**: All auctions saved to disk
+
+## Example Auction House Usage
 
 ```
-/order sell dirt 64 10
-  → Creates a sell order: 64 dirt at 10 coins each
+/ah sell diamond 1 1000
+  → List 1 diamond starting bid 1000 coins
 
-/browse sell
-  → Shows all active sell orders
+/ah view
+  → See all active auctions
 
-/buy order_123456 32
-  → Buy 32 dirt from order_123456 for 320 coins
+/ah bid auction_123456 1500
+  → Bid 1500 coins on auction
 
-/myorders
-  → View all your active orders
+/ah myauctions
+  → View your listed auctions
 
-/cancelorder order_123456
-  → Cancel your order
+/ah mybids
+  → View auctions you're bidding on
+
+/ah cancel auction_123456
+  → Cancel your auction
 ```
 
 ## Next Phase

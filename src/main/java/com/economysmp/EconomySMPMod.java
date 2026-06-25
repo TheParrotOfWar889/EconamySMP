@@ -4,8 +4,10 @@ import net.fabricmc.api.ModInitializer;
 import com.economysmp.command.EconomyCommands;
 import com.economysmp.command.ShopCommands;
 import com.economysmp.command.MarketplaceCommands;
+import com.economysmp.command.AuctionHouseCommands;
 import com.economysmp.data.PlayerDataManager;
 import com.economysmp.marketplace.MarketplaceManager;
+import com.economysmp.auctionhouse.AuctionHouseManager;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,11 +24,13 @@ public class EconomySMPMod implements ModInitializer {
             LOGGER.info("EconomySMP server started!");
             PlayerDataManager.init(server);
             MarketplaceManager.init(server);
+            AuctionHouseManager.init(server);
         });
         
         EconomyCommands.register();
         ShopCommands.register();
         MarketplaceCommands.register();
+        AuctionHouseCommands.register();
         
         LOGGER.info("EconomySMP initialized successfully!");
     }
