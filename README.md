@@ -8,24 +8,23 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - 🏛️ Auction House with bidding system
 - 💎 Shards (premium currency)
 - 🎁 Animated crates with 5 tiers
-- ✨ 40+ custom enchantments - Coming Soon
-- 📈 Skills and leveling system - Coming Soon
-- 🏦 Bank system - Coming Soon
-- 🏡 Homes and warps - Coming Soon
-- ⚡ Teleport commands - Coming Soon
-- 📊 Leaderboards - Coming Soon
+- 📊 Skills & Leveling (Mining, Combat, Fishing, Farming, Woodcutting)
+- 🏦 Bank system with 5% daily interest
+- 🏡 Homes & Warps (up to 6 homes)
+- ⚡ Random Teleport (`/rtp`)
+- ⚔️ Custom Enchantments - Coming Soon
+- 📈 Leaderboards - Coming Soon
 - 🎯 Daily rewards - Coming Soon
 
-## Phase 4 - Shards & Crates System ✅
+## Phase 5 - Skills, Bank, Homes & RTP ✅
 
-- ✅ Shard currency system
-- ✅ 5 Crate tiers (Common, Rare, Epic, Legendary, Mythic)
-- ✅ Random reward system
-- ✅ Animated crate opening
-- ✅ Reward rarity system
-- ✅ Crate cooldown system
-- ✅ Shard shop display
-- ✅ Rich reward descriptions
+- ✅ Skills & Leveling system (5 skills)
+- ✅ Bank accounts with 5% daily interest
+- ✅ Home system (up to 6 homes)
+- ✅ Random teleport command
+- ✅ Home management (set, go, list, delete)
+- ✅ XP progression system
+- ✅ Interest calculation
 
 ## How to Build
 
@@ -67,49 +66,83 @@ A comprehensive economy mod for Minecraft Fabric 26.1 featuring:
 - `/crate info <type>` - Get info about a crate type
 - `/shardshop` - View shard shop and crate costs
 
-## Crate System
+### Skills & Leveling
+- `/skills` - View your skill levels and XP
 
-### Crate Tiers & Costs
-- **Common Crate**: 10 Shards
-- **Rare Crate**: 25 Shards
-- **Epic Crate**: 50 Shards
-- **Legendary Crate**: 100 Shards
-- **Mythic Crate**: 250 Shards
+### Bank System
+- `/bank balance` - Check your bank balance
+- `/bank deposit <amount>` - Deposit coins into bank
+- `/bank withdraw <amount>` - Withdraw coins from bank
 
-### Possible Rewards by Tier
+### Homes & Teleportation
+- `/home set <name>` - Set a home at your current location
+- `/home go <name>` - Teleport to a home
+- `/home list` - List all your homes
+- `/home delete <name>` - Delete a home
+- `/rtp` - Random teleport to a random location in the world
 
-**Common**: Diamonds, Gold Ingots, Emeralds, Iron, 100 Coins
-**Rare**: More Diamonds, More Gold, Pickaxes, 500 Coins
-**Epic**: Large quantities of gems, Iron Pickaxe, 2000 Coins
-**Legendary**: Massive gem hoards, Diamond Pickaxe, 5000 Coins, 100 Shards
-**Mythic**: Ultimate treasures, 100 Diamonds, 200 Gold, 128 Emeralds, 10000 Coins, 500 Shards
+## Skills System
 
-## Example Crate Usage
+Earn XP in 5 different skills:
+- **Mining**: Break ore blocks
+- **Combat**: Defeat mobs and players
+- **Fishing**: Fish in water
+- **Farming**: Harvest crops
+- **Woodcutting**: Chop trees
+
+Each skill levels up at 1000 XP per level!
+
+## Bank System Features
+
+- **Safe Storage**: Keep coins safe in the bank
+- **5% Interest**: Earn 5% interest per day on your balance
+- **Automated Interest**: Interest calculated automatically
+- **Deposit/Withdraw**: Easy coin management
+
+## Homes System
+
+- **Up to 6 homes**: Set multiple home locations
+- **Quick Teleport**: Instantly teleport to any home
+- **Easy Management**: Add, view, and delete homes
+- **Cross-World**: Works across multiple worlds
+
+## Random Teleport
+
+- **Explore**: Teleport to random locations
+- **Adventure**: Discover new areas
+- **Simple Command**: Just use `/rtp`
+
+## Example Usage
 
 ```
-/shardshop
-  → See crate costs and your shard balance
+/skills
+  → View your skill levels and XP
 
-/crate info legendary
-  → Learn about Legendary crates
+/bank deposit 1000
+  → Deposit 1000 coins, earn 50 coins per day in interest!
 
-/crate open common
-  → Open a common crate (costs 10 shards)
-  → Get random reward!
+/home set spawn
+  → Set a home at your current location
 
-/crate open mythic
-  → Open ultimate crate (costs 250 shards)
-  → Chance at 500 shards or 10000 coins!
+/home go spawn
+  → Teleport back to your spawn home
+
+/home list
+  → See all 6 of your homes
+
+/rtp
+  → Teleport to a random location!
 ```
 
 ## Complete Feature Set
 
-✅ Economy System (Phase 1)
-✅ Shop GUI (Phase 2)
-✅ Marketplace (Phase 3)
-✅ Auction House (Phase 3.5)
-✅ Shards & Crates (Phase 4)
+✅ Phase 1: Economy System
+✅ Phase 2: Shop GUI
+✅ Phase 3: Marketplace
+✅ Phase 3.5: Auction House
+✅ Phase 4: Shards & Crates
+✅ Phase 5: Skills, Bank, Homes & RTP
 
 ## Next Phase
 
-Custom Enchantments & Skills system.
+Custom Enchantments & Advanced Systems.
